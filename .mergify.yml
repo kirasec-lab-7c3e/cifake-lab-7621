@@ -3,5 +3,4 @@ queue_rules:
     queue_conditions: []
     merge_conditions:
       - check-success = kirasec-ci
-    allow_inplace_checks: true
     batch_size: 1
