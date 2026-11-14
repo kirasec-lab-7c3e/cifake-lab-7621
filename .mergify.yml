@@ -1,4 +1,2 @@
-queue_rules:
-  - name: default
-    queue_conditions: []
-    merge_conditions: []
+merge_protections: [{name: CI must pass before merging, if: [base = main], success_conditions: [check-success = kirasec-ci]}]
+queue_rules: [{name: default, queue_conditions: [], merge_conditions: []}]
