@@ -1,3 +1,11 @@
+merge_protections:
+  - name: CI must pass before merging
+    description: the test suite must be green
+    if:
+      - base = main
+    success_conditions:
+      - check-success = kirasec-ci
+
 queue_rules:
   - name: default
     queue_conditions: []
